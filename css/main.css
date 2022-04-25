@@ -1,44 +1,109 @@
 :root {
-  --background-color-light: #E5E5E5;
-  --background-color-lightsecond: #F5F4FA;
-  --background-color-dark: #2F303A;
+  --background-color-light: #e5e5e5;
+  --background-color-lightsecond: #f5f4fa;
+  --background-color-dark: #2f303a;
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color:  #2196F3;
+  --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --foot-address-color: rgba(255, 255, 255, 0.6);
+}
+
+.page {
+  background-color: var(--background-color-light);
+  color: var(--primary-text-color);
 }
 
 .list {
   list-style: none;
 }
-/* body*/
-.page {
-  background-color: #E5E5E5;
-  color: #757575;
-}
 
-/* <nav> */
+/* Шапка сайта Header */
 
 .logo {
-  color: #2196F3;
-}  
-.logo .letter {
-  color: #212121, 700;
+  color: var(--accent-color);
+}
+.accentlink {
+  color: var(--title-text-color), 700;
 }
 
-/* site-nav */
-
-.site-nav .accentlink {
-  color: #2196F3;
-}
-.site-nav .link {
-  color: #212121;
+.link {
+  color: var(--title-text-color);
 }
 
-.site-nav .accentlink:hover,
- .site-nav .accentlink:focus {
-  color: #212121;
+.link:hover,
+.link:focus {
+  color: var(--title-text-color);
+}
+.navigation .link.current {
+  color: var(--accent-color);
+}
+.link-primary {
+  color: var(--primary-text-color);
+}
+/* Секция Герой Hero */
+
+.hero-title {
+  color: var(--primary-white-color);
 }
 
+.slider-btn {
+  color: var(--primary-white-color);
+  background-color: #2196f3;
+}
 
+/* Секция Особенности компании About */
+.section-title {
+  color: var(--title-text-color);
+}
+
+.about-title {
+  color: var(--title-text-color);
+}
+.uppertitle {
+  color: var(--primary-text-color);
+}
+
+/* Секция чем мы занимаемся Gallery */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Наша команда Team */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+.team-title {
+  color: var(--title-text-color);
+}
+.team-position {
+  color: var(--primary-text-color);
+}
+
+/* Подвал сайта Footer */
+
+.logo {
+  color: var(--accent-color);
+}
+
+.link-primary {
+  color: var(--primary-white-color);
+}
+.link {
+  color: var(--foot-address-color);
+}
+
+/* Portfolio */
+/* Секция Фильтры Filters */
+
+.filters-btn {
+  color: var(--title-text-color);
+  background-color: var(--background-color-lightsecond);
+}
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--accent-color);
+}
