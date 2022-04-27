@@ -9,55 +9,52 @@
   --foot-address-color: rgba(255, 255, 255, 0.6);
 }
 
+.list {
+  list-style: none;
+}
 .page {
   background-color: var(--background-color-light);
   color: var(--primary-text-color);
 }
-
-.list {
-  list-style: none;
-}
-
 /* Шапка сайта Header */
 
 .logo {
   color: var(--accent-color);
+  text-decoration: none;
 }
-.accentlink {
-  color: var(--title-text-color), 700;
-}
-
-.link {
+.accent-dark {
   color: var(--title-text-color);
 }
-
-.link:hover,
-.link:focus {
+.accent-white {
+  color: var(--primary-white-color);
+}
+.nav.link {
   color: var(--title-text-color);
 }
-.navigation .link.current {
+.nav.link.current {
   color: var(--accent-color);
 }
-.link-primary {
+.accent.link {
   color: var(--primary-text-color);
 }
+
 /* Секция Герой Hero */
 
 .hero-title {
   color: var(--primary-white-color);
 }
-
 .slider-btn {
   color: var(--primary-white-color);
   background-color: #2196f3;
 }
-
-/* Секция Особенности компании About */
-.section-title {
+.slider-btn:hover,
+.slider-btn:focus {
   color: var(--title-text-color);
 }
 
-.about-title {
+/* Секция Особенности компании About */
+.section-title,
+.title {
   color: var(--title-text-color);
 }
 .uppertitle {
@@ -66,33 +63,15 @@
 
 /* Секция чем мы занимаемся Gallery */
 
-.section-title {
-  color: var(--title-text-color);
-}
-
 /* Наша команда Team */
 
-.section-title {
-  color: var(--title-text-color);
-}
-
-.team-title {
-  color: var(--title-text-color);
-}
 .team-position {
   color: var(--primary-text-color);
 }
 
 /* Подвал сайта Footer */
 
-.logo {
-  color: var(--accent-color);
-}
-
-.link-primary {
-  color: var(--primary-white-color);
-}
-.link {
+.link.accent-gray {
   color: var(--foot-address-color);
 }
 
@@ -105,5 +84,14 @@
 }
 .filters-btn:hover,
 .filters-btn:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.link:hover,
+.link:focus {
   color: var(--accent-color);
+}
+.link {
+  text-decoration: none;
 }
