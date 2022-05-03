@@ -3,20 +3,20 @@
   --main-font: Roboto, sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 
+  /* colors */
+  --main-white-cl: #ffffff;
+  --accent-cl: #2196f3;
+
   /* text colors */
   --main-txt-cl: #757575;
   --title-txt-cl: #212121;
-  --accent-cl: #2196f3;
-  --main-white-cl: #ffffff;
-  --address-phone-cl: rgba(255, 255, 255, 0.6);
-  --address-email-cl: #c4c4c4;
-  --logo-dark-cl: #000000;
+  --accent-cl-white: rgba(255, 255, 255, 0.6);
+  --accent-cl-dark: #000000;
 
   /* background colors */
   --main-bg-cl: #e5e5e5;
   --secondary-bg-cl: #f5f4fa;
   --dark-bg-cl: #2f303a;
-  --header-bg-color: #ffffff;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
   line-height: 1.4;
 
   color: var(--main-txt-cl);
-  background-color: var(--main-bg-cl);
+  background-color: var(--main-white-cl);
 }
 .visually-hidden {
   position: absolute;
@@ -71,7 +71,7 @@ body {
   text-decoration: none;
 }
 .accent-dark {
-  color: var(--title-txt-cl);
+  color: var(--accent-cl-dark);
 }
 .accent-white {
   color: var(--main-white-cl);
@@ -83,7 +83,7 @@ body {
 ============================
 */
 .header {
-  background-color: var(--header-bg-color);
+  background-color: var(--main-white-cl);
 }
 
 .header .link {
@@ -136,7 +136,7 @@ body {
 
 .hero .btn:hover,
 .hero .btn:focus {
-  color: var(--title-txt-cl);
+  background-color: #188ce8;
 }
 
 /*
@@ -147,7 +147,7 @@ body {
 
 .about .title {
   color: var(--title-txt-cl);
-
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -186,6 +186,7 @@ body {
 .team .title {
   color: var(--title-txt-cl);
 
+  font-size: 16px;
   font-weight: 500;
   text-align: center;
 }
@@ -199,17 +200,17 @@ body {
 | Footer section / Подвал 
 ============================
 */
-
+.footer {
+  background-color: var(--dark-bg-cl);
+}
 .address .link {
   color: var(--main-white-cl);
+  font-style: normal;
   line-height: 1.7;
 }
 
-.address .email {
-  color: var(--address-email-cl);
-}
-.address .phone {
-  color: var(--address-phone-cl);
+.address .accent.link {
+  color: var(--accent-cl-white);
 }
 
 /* 
